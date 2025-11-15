@@ -208,11 +208,12 @@
             <label><span style="color: blue;">9-   گرایش به اسلام؟</label>
             <div>
                 <input type="radio" name="q9" value="1"> موقوفه اسلام<br>
-                <input type="radio" name="q9" value="0.8"> شیعه معتقد<br>
-                <input type="radio" name="q9" value="0.2"> سنی<br>
+                <input type="radio" name="q9" value="0.8"> شیعه مقید<br>
+                <input type="radio" name="q9" value="0.6"> شیعه معمولی<br>
+                <input type="radio" name="q9" value="0.2">  اهل سنت و جماعت<br>
 <br>
                 <input type="radio" name="q9" value="0.5"> در حد لازم<br>
-                <input type="radio" name="q9" value="-0.5"> مانند دیگران<br>
+                <input type="radio" name="q9" value="-0.3"> مانند دیگران<br>
 <br>
                 <input type="radio" name="q9" value="-4"> ادیان ابراهیمی و زرتشتی<br>
                 <input type="radio" name="q9" value="-2"> سایر ادیان<br>
@@ -300,13 +301,15 @@
             // Output
             let outputText = `نمره اولیه از بیست: ${yyy}\n`;
             if (yyy < 0) {
-                outputText += "اصلا و ابدا";
+                outputText += "متاسفم";
             } else if (yyy >= 0 && yyy <= 8) {
-                outputText += "بدردم نمی‌خورد";
+                outputText += "به‌درد هم نمی‌خوریم";
             } else if (yyy >= 8 && yyy <= 12) {
                 outputText += "زیاد مطمئن نیستم";
-            } else if (yyy > 12 && yyy <= 20) {
-                outputText += "باید از نزدیک هم ببینم";
+            } else if (yyy > 12 && yyy <= 16) {
+                outputText += "مورد خوبیست";
+            } else if (yyy > 16 && yyy <= 20) {
+                outputText += "عالی: درخواست آشنایی بیشتر";
             } else if (yyy > 20) {
                 outputText += "شگفت انگیز";
             }
@@ -315,4 +318,5 @@
         }
     </script>
 </body>
+
 </html>
