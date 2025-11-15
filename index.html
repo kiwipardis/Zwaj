@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارزیابی اولیه شخصی</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+        h1 {
+            font-size: large;
+            color: red;
+        }
+        .output {
+            color: magenta;
+            font-weight: bold;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question input[type="number"] {
+            width: 100px;
+            padding: 5px;
+        }
+        .question input[type="radio"], .question input[type="checkbox"] {
+            margin-left: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>ارزیابی اولیه شخصی</h1>
+    <form id="questionnaire">
+        <!-- Q1 -->
+        <div class="question">
+            <label for="q1"><span style="color: blue;">1-   سن تقریبی؟</label>
+            <input type="number" id="q1" name="q1" min="0" max="120">
+        </div>
+        <!-- Q2 -->
+        <div class="question">
+            <label for="q2"><span style="color: blue;">2-   قد به سانتی متر؟</label>
+            <input type="number" id="q2" name="q2" min="0" max="300">
+        </div>
+        <!-- Q3 -->
+        <div class="question">
+            <label><span style="color: blue;">3-زبان‌های قادر به صحبت کردن</label>
+            <div>
+                <input type="radio" name="q3" value="0.0"> فقط فارسی<br>
+
+                <input type="radio" name="q3" value="0.1"> عربی<br>
+                <input type="radio" name="q3" value="1.5"> انگلیسی<br>
+<br>
+                <input type="radio" name="q3" value="0.75"> سایر زبانهای اروپایی<br>
+                <input type="radio" name="q3" value="-3"> دیگر زبانها و گویش‌های فارسی یا ایرانی<br>
+<br>شاخه ترکی<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q3" value="4">  ترکی استامبولی<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q3" value="3.1">   ترکمنی و ازبکی<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q3" value="3.9">   ترکی آذربایجانی و ایرانی<br>
+<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q3" value="3.6">  قشقایی<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q3" value="5">   ترکی و انگلیسی<br>
+
+            </div>
+        </div>
+        <!-- Q4 -->
+        <div class="question">
+            <label><span style="color: blue;">4-   وضعیت حجاب؟</label>
+            <div>
+                <input type="radio" name="q4" value="0.4"> با روبنده<br>
+                <input type="radio" name="q4" value="0.5"> چادری<br>
+                <input type="radio" name="q4" value="0.3"> مانتو رسمی<br>
+<br>
+                <input type="radio" name="q4" value="0.1"> با کلاس<br>
+                <input type="radio" name="q4" value="0"> آزادی و برابری<br>
+                <input type="radio" name="q4" value="-1"> اروپایی<br>
+            </div>
+        </div>
+        <!-- Q5 -->
+        <div class="question">
+            <label><span style="color: blue;">5-   محل اقامت؟</label>
+            <div>
+<br>کرج<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="2"> همسایه<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1.8"> گوهردشت<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1.5"> کرج<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1.2"> استان البرز<br>
+<br>شهر تهران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1.2"> شمالغرب تهران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value=".8"> مرکز تهران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value=".3"> شمالشرق تهران<br>
+<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1"> جنوبغرب تهران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0"> جنوبشرق تهران<br>
+<br>استان تهران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1.2"> غرب استان تهران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.1"> شمال استان تهران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.1"> جنوب استان تهران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="-1"> شرق استان تهران<br>
+
+<br>استان‌های ایران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.9"> قزوین<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1"> زرندیه<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.5"> ساوه<br>
+<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.4"> زنجان<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.2"> استان همدان <br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.1"> استان مرکزی<br>
+<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1">  استانهای شمالغرب ایران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="-1"> غرب یا جنوب ایران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0"> شمال ایران<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="-2"> شرق ایران<br>
+<br>خارج کشور<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0"> شمال افغانستان<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="-0.2"> افغانستان<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="2"> ترکیه<br>
+<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.5"> عراق<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.2"> خاورمیانه<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.2"> آسیا<br>
+<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1.2"> اقیانوسیه<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="2"> انگلستان<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1.7"> اروپا<br>
+<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="2"> آمریکا و کانادا<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0.5"> دیگرمناطق جهان<br>
+            </div>
+        </div>
+        <!-- Q6 -->
+        <div class="question">
+            <label><span style="color: blue;">6-   مدرک تحصیلی؟</label>
+            <div>
+                <input type="radio" name="q6" value="0"> بیسواد<br>
+                <input type="radio" name="q6" value="-2"> زیردیپلم<br>
+                <input type="radio" name="q6" value="-1"> دیپلم<br>
+<br>
+                <input type="radio" name="q6" value="-2"> فوق دیپلم<br>
+                <input type="radio" name="q6" value="1"> لیسانس<br>
+                <input type="radio" name="q6" value="1.2"> فوق لیسانس<br>
+                <input type="radio" name="q6" value="2.5">دکترای حرفه‌ای<br>
+<br>
+                <input type="radio" name="q6" value="1.3">Ph.D<br>
+                <input type="radio" name="q6" value="3"> دستیاری پزشکی<br>
+            </div>
+        </div>
+        <!-- Q7 -->
+        <div class="question">
+            <label><span style="color: blue;">7-   رشته تحصیلی یا شغلی؟</label>
+            <div>
+<br>حرفه‌ای<br>
+
+                <input type="radio" name="q7" value="3">خانه‌دار روستایی و عشایری<br>
+                <input type="radio" name="q7" value="2.5">خانه‌دار شهری<br>
+                <input type="radio" name="q7" value="1">فروشنده و ویزیتور<br>
+<br>
+                <input type="radio" name="q7" value="2.3">روانشناسی و مشاوره<br>
+                <input type="radio" name="q7" value="2.4">معلم، دبیر، استاد<br>
+                <input type="radio" name="q7" value="2">کشاورزی و دام<br>
+<br>
+                <input type="radio" name="q7" value="2.2">تغذیه و آشپزی<br>
+                <input type="radio" name="q7" value="1.0">اداری و کارمندی<br>
+                <input type="radio" name="q7" value="2.3">خیاطی<br>
+                <input type="radio" name="q7" value="0.1">آرایش و زیبایی<br>
+<br>تحصیلی<br>
+                <input type="radio" name="q7" value="1.5">فناوری اطلاعات<br>
+                <input type="radio" name="q7" value="2">علوم آزمایشگاهی و بیمارستانی<br>
+                <input type="radio" name="q7" value="1.3">حوزوی<br>
+<br>
+                <input type="radio" name="q7" value="4">پزشکی<br>
+                <input type="radio" name="q7" value="3.7">شیمی و دارو<br>
+                <input type="radio" name="q7" value="3.8">فیزیولوژی<br>
+<br>
+                <input type="radio" name="q7" value="3"> پیراپزشکی مانند پرستاری و مامایی <br>
+                <input type="radio" name="q7" value="-1">حقوق<br>
+                <input type="radio" name="q7" value="0.0"> فنی و مهندسی<br>
+                <input type="radio" name="q7" value="0.2">هنر<br>
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="question">
+            <label><span style="color: blue;">8-   سوابق ازدواج؟</label>
+            <div>
+                <input type="radio" name="q8" value="0"> شناسنامه سفید<br>
+                <input type="radio" name="q8" value="-0.2"> عقد منجر به طلاق بدون عروسی<br>
+                <input type="radio" name="q8" value="-2"> طلاق بدون فرزند<br>
+
+<br>                <input type="radio" name="q8" value="-1"> فوت همسر پیشین<br>
+                <input type="radio" name="q8" value="-5"> دارای فرزند<br>
+                <input type="radio" name="q8" value="-7">ازدواج سفید<br>
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="question">
+            <label><span style="color: blue;">9-   گرایش به اسلام؟</label>
+            <div>
+                <input type="radio" name="q9" value="1"> موقوفه اسلام<br>
+                <input type="radio" name="q9" value="0.8"> شیعه معتقد<br>
+                <input type="radio" name="q9" value="0.2"> سنی<br>
+<br>
+                <input type="radio" name="q9" value="0.5"> در حد لازم<br>
+                <input type="radio" name="q9" value="-0.5"> مانند دیگران<br>
+<br>
+                <input type="radio" name="q9" value="-4"> ادیان ابراهیمی و زرتشتی<br>
+                <input type="radio" name="q9" value="-2"> سایر ادیان<br>
+                <input type="radio" name="q9" value="-9"> قبلا مسلمان بوده ولی برگشته<br>
+            </div>
+        </div>
+        <!-- Q10 -->
+        <div class="question">
+            <label><span style="color: blue;">10-   فیزیک و بیماری‌ها؟</label>
+            <div>
+                <input type="radio" name="q10" value="0">سالم<br>
+                <input type="radio" name="q10" value="2">ورزشکار<br>
+                <input type="radio" name="q10" value="-1">مصرف مزمن داروهای متابولیک<br>
+<br>
+                <input type="radio" name="q10" value="-4">اعصاب و روان منجر به بستری یا مصرف مزمن دارو<br>
+                <input type="radio" name="q10" value="-3">معلولیت حرکتی<br>
+                <input type="radio" name="q10" value="-8">معلولیت ذهنی یا روانی<br>
+<br>
+                <input type="radio" name="q10" value="-2">صورت زشت<br>
+                <input type="radio" name="q10" value="-3">اندام ناموزون<br>
+
+            </div>
+        </div>
+        <!-- Calculate Button -->
+        <button type="button" onclick="calculate()">حساب کن</button>
+    </form>
+    <!-- Output Section -->
+    <div class="output" id="output"></div>
+
+    <script>
+        function calculate() {
+            let sss = 0;
+
+            // Q1 and Q2
+            const q1 = parseInt(document.getElementById('q1').value);
+            const q2 = parseInt(document.getElementById('q2').value);
+
+            if (q1 < 17) {
+                document.getElementById('output').innerText = "هرگز، مورد شما غیرقانونی است!";
+                return;
+            } else if (q1 > 60) {
+                document.getElementById('output').innerText = "هرگز، مورد شما بسیارپیر است!";
+                return;
+            } else if (q2 < 90) {
+                document.getElementById('output').innerText = "هرگز، مورد شما کوتوله است!";
+                return;
+            } else if (q2 > 201) {
+                document.getElementById('output').innerText = "هرگز، مورد شما هیولا است!";
+                return;
+            } else {
+                sss += 6/20*(50-q1)+q2/100-1;
+            }
+
+            // Q3
+            const q3Checkboxes = document.querySelectorAll('input[name="q3"]:checked');
+            q3Checkboxes.forEach(checkbox => {
+                sss += parseInt(checkbox.value);
+            });
+
+            // Q4
+            const q4 = document.querySelector('input[name="q4"]:checked');
+            if (q4) sss += parseInt(q4.value);
+
+            // Q5
+            const q5 = document.querySelector('input[name="q5"]:checked');
+            if (q5) sss += parseInt(q5.value);
+
+            // Q6
+            const q6 = document.querySelector('input[name="q6"]:checked');
+            if (q6) sss += parseInt(q6.value);
+
+            // Q7
+            const q7 = document.querySelector('input[name="q7"]:checked');
+            if (q7) sss += parseInt(q7.value);
+            // Q8
+            const q8 = document.querySelector('input[name="q8"]:checked');
+            if (q8) sss += parseInt(q8.value);
+            // Q9
+            const q9 = document.querySelector('input[name="q9"]:checked');
+            if (q9) sss += parseInt(q9.value);
+            // Q10
+            const q10 = document.querySelector('input[name="q10"]:checked');
+            if (q10) sss += parseInt(q10.value);
+            let yyy = Math.floor(sss *20/23);
+            // Output
+            let outputText = `نمره اولیه از بیست: ${yyy}\n`;
+            if (yyy < 0) {
+                outputText += "اصلا و ابدا";
+            } else if (yyy >= 0 && yyy <= 8) {
+                outputText += "بدردم نمی‌خورد";
+            } else if (yyy >= 8 && yyy <= 12) {
+                outputText += "زیاد مطمئن نیستم";
+            } else if (yyy > 12 && yyy <= 20) {
+                outputText += "باید از نزدیک هم ببینم";
+            } else if (yyy > 20) {
+                outputText += "شگفت انگیز";
+            }
+
+            document.getElementById('output').innerText = outputText;
+        }
+    </script>
+</body>
+</html>
